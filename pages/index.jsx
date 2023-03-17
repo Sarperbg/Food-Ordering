@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import Head from "next/head";
 import Home from "./home";
@@ -15,7 +16,6 @@ export default function Index() {
       
 
       </Head>
-      <Header />
       <Home />
      
 
