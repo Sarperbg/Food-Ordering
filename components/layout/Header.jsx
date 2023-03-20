@@ -12,16 +12,16 @@ const Header = () => {
   const router = useRouter();
   return (
     <div
-      className={`h-[5.5rem] z-50 relative ${
-        router.asPath === "/" ? "bg-transparent" : "bg-secondary"
-      }`}
+      className={`h-[5.5rem] z-50 relative ${router.asPath === "/" ? "bg-transparent" : "bg-secondary"
+        }`}
     >
       <div className="container mx-auto text-white flex justify-between items-center h-full">
         <Logo />
         <nav
-          className={`sm:static absolute top-0 left-0 sm:w-auto sm:h-auto w-full h-screen sm:text-white text-black sm:bg-transparent bg-white sm:flex hidden  ${
-            isMenuModal === true && "!grid place-content-center"
-          }`}
+          className={`sm:static absolute top-0 left-0 sm:w-auto sm:h-auto w-full h-screen
+           sm:text-white text-black sm:bg-transparent bg-white sm:flex hidden  
+          ${isMenuModal === true && "!grid place-content-center"
+            }`}
         >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
@@ -47,14 +47,20 @@ const Header = () => {
           )}
         </nav>
         <div className="flex gap-x-4 items-center">
-          <a href="#">
-            <FaUserAlt className="hover:text-primary transition-all" />
-          </a>
-          <a href="#">
-            <FaShoppingCart className="hover:text-primary transition-all" />
-          </a>
+          <Link href="/auth/login">
+            <span>
+              <FaUserAlt className="hover:text-primary transition-all cursor-pointer" />
+            </span>
+          </Link>
+          <Link href="/cart">
+            <span>
+             <FaShoppingCart className="hover:text-primary transition-all cursor-pointer" />
+            </span>
+
+          </Link>
           <button onClick={() => setIsSearchModal(true)}>
-            <FaSearch className="hover:text-primary transition-all" />
+            <FaSearch className="hover:text-primary transition-all cursor-pointer" />
+
           </button>
           <a href="#" className="md:inline-block hidden sm">
             <button className="btn-primary">Order Online</button>

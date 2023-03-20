@@ -9,7 +9,8 @@ const Reservation = () => {
     await new Promise((resolve) => setTimeout(resolve, 4000));
     actions.resetForm();
   }
-  const { values, errors,touched , handleSubmit, handleChange, handleBlur  } = useFormik({
+  const { values, errors,touched , handleSubmit, handleChange, handleBlur  } = 
+  useFormik({
     initialValues: {
       fullName: "",
       phoneNumber: "",
@@ -19,7 +20,7 @@ const Reservation = () => {
     },
     onSubmit,
     validationSchema: reservationSchema,
-  })
+  });
 
   const inputs = [
     {
