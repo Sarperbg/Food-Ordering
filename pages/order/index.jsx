@@ -28,10 +28,10 @@ const Order = () => {
                   63107f5559...
                 </td>
                 <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                  Emin Başbayan
+                  Sarper Gulfirat
                 </td>
                 <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                  Adana
+                  İzmir
                 </td>
                 <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
                   $18
