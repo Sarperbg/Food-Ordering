@@ -2,7 +2,7 @@
 import Password from '@/components/profile/Password';
 import Image from 'next/legacy/image'
 import { useState } from "react";
-import Account from "../../components/profile/Account";
+import Account from "../../components/admin/Footer";
 import Order from "../../components/profile/Order";
 
 const Profile = () => {
