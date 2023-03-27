@@ -6,7 +6,7 @@ import { footerSchema } from "../../schema/footer";
 
 const Footer = () => {
   const [linkAddress, setLinkAddress] = useState("");
-  const [iconName, setIconName] = useState("");
+  const [ iconName, setIconName] = useState("");
   const [icons, setIcons] = useState([
     "fa fa-facebook",
     "fa fa-twitter",
